@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<table>
+<thead class="thead-dark">
+<tr>
+    <th>CIF</th>
+    <th>Nom </th>
+    <th>Adreça</th>
+    <th>Alumne</th>
+</tr>
+<tbody>
+<tr th:each="empresa : ${empreses}">
+    <td th:text="${empresa.CIF}"/>
+    <td th:text="${empresa.Nom}"/>
+    <td th:text="${empresa.Adresa}"/>
+    <td th:text="${empresa.Alumne}"/>
+</tr>
+</tbody>
+</table>
+</html>
